@@ -2,6 +2,8 @@ class Course
 
 attr_accessor :title, :schedule, :description
 
-def self.all
+@@all = []
+def initialize
+  @@all << self
 end
 end
